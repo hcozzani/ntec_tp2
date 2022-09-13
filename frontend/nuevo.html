@@ -1,0 +1,83 @@
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+
+<div class="container-fluid">
+
+    <h4>Nuevo Pedido</h4>
+
+    <div class="row">
+      <div class="col" style="text-align: end;">
+        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Nuevo</button>
+      </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Nuevo Producto</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            
+            <div class="row">
+              <div class="col">
+                <label for="">Nombre:</label>
+                <input id="Nombre" type="text" class="form-control">
+              </div>
+              <div class="col">
+                <label for="">Direccion:</label>
+                <input id="Direccion" type="text" class="form-control">
+              </div>
+            </div>
+            <br>
+
+            <div class="row">
+              <div class="col">
+                <label for="">Telefono:</label>
+                <input id="Telefono" type="text" class="form-control">
+              </div>
+              <div class="col">
+                <label for="">Pedido:</label>
+                <select id="Pedido" class="form-select">
+                  <option selected>Si</option>
+                  <option value="1">Si</option>
+                  <option value="2">No</option>
+                </select>
+              </div>
+            </div>
+            <br>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" onclick="crearPedido();" class="btn btn-primary">Guardar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Direccion</th>
+            <th scope="col">Telefono</th>
+            <th scope="col">Pedido</th>
+            <th scope="col"></th>  
+          </tr>
+        </thead>
+        <tbody id="grdDatos">
+          
+
+        </tbody>
+      </table>
+
+</div>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="routes/routes.controller.js"></script>
+<script src="controllers/nuevo.controller.js"></script>

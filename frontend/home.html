@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+
+<div class="container-fluid">
+
+    <h4>Productos disponibles</h4>
+
+    <div class="row">
+      <div class="col" style="text-align: end;">
+        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-plus" aria-hidden="true"></i></button>
+      </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Nuevo Producto</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body"> 
+            <div class="row">
+              <div class="col">
+                <label for="">Producto:</label>
+                <input id="Producto" type="text" class="form-control">
+              </div>
+              <div class="col">
+                <label for="">Precio:</label>
+                <input id="Precio" type="text" class="form-control">
+              </div>
+            </div>
+            <br>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button onclick="postData();" type="button" class="btn btn-outline-primary">Guardar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <table  class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Producto</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Disponible</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody id="grdDatos"></tbody>
+      </table>
+
+</div>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/sweetalert/sweetalert.min.js"></script>
+<script src="routes/routes.controller.js"></script>
+<script src="controllers/home.controller.js"></script>

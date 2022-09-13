@@ -1,0 +1,70 @@
+body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.9s;
+    padding-top: 50px;
+    margin-left:40px;
+  }
+  
+  .folder {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #f3f3f3;
+    display: block;
+    transition: 0.6s;
+  }
+
+  .itemview {
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+  }
+
+  .itemview a:hover {
+    color: #f1f1f1;
+    background-color: red;
+  }
+
+  .sidebar a:hover {
+    color: black;
+    background-color: #f1f1f1;
+  }
+
+  .customLi:hover {
+    color: black;
+    background-color: #f1f1f1;
+  }
+ 
+  #main {
+    transition: margin-left .5s;
+    margin-left:   250px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+  .customContainer{
+    background-color: white;
+    height: calc(95vh);
+    border-radius: 20px; 
+    margin-left: 60px; 
+    margin-right: 60px;
+  }
+
+  .customIframe{
+    background-color: white;
+    height: calc(80vh);
+  }
+

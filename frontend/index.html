@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/customCss/customSidebar.css">
+<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+
+<title>Sistema de pedidos</title>
+</head>
+<body style="background-color:#0E233E;">
+
+<div class="container">
+<div id="mySidebar" class="sidebar">
+
+      <!--
+      <center>
+        <img src="assets/img/logo.png" width="40%" style=""></img>
+      </center>
+      -->
+
+      <a class="folder" href="" style="border-radius: 20px" target="container" data-bs-toggle="collapse" data-bs-target="#menu1"><i class="fa fa-bars" aria-hidden="true"></i>&nbsp;&nbsp;Menú de Funcionalidades</a>
+      <div class="collapse" id="menu1">  
+        <br>
+        <ul class="list-group" style="border-radius: 20px">
+          <li class="list-group-item customLi"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <a class="itemview" href="home.html" target="container">&nbsp;&nbsp;Productos</a>
+          </li>
+          <li class="list-group-item customLi"><i class="fa fa-plus" aria-hidden="true"></i>
+            <a class="itemview" href="nuevo.html" target="container">&nbsp;&nbsp;Nuevo pedido</a>
+          </li>
+          <li class="list-group-item customLi"><i class="fa fa-shopping-basket" aria-hidden="true"></i>
+            <a class="itemview" href="pendientes.html" target="container">&nbsp;&nbsp;Pedidos pendientes</a>
+          </li>
+          <li class="list-group-item customLi"><i class="fa fa-desktop" aria-hidden="true"></i>
+            <a class="itemview" href="completos.html" target="container">&nbsp;&nbsp;Pedidos completados</a>
+          </li>
+          <li class="list-group-item customLi"><i class="fa fa-user" aria-hidden="true"></i>
+            <a class="itemview" href="entregados.html" target="container">&nbsp;&nbsp;Pedidos Entregados</a>
+          </li>
+        </ul>
+        <br>
+      </div>
+
+      <a class="folder" href="" style="border-radius: 20px" target="container" data-bs-toggle="collapse" data-bs-target="#menu2"><i class="fa fa-cog aria-hidden="true"></i>&nbsp;&nbsp;Usuarios</a>
+      <div class="collapse" id="menu2">  
+        <br>
+        <ul class="list-group" style="border-radius: 20px">
+          <li class="list-group-item customLi"><i class="fa fa-users" aria-hidden="true"></i>
+            <a class="itemview" href="users.html" target="container">&nbsp;&nbsp;Administrar</a>
+          </li>
+
+        </ul>
+        <br>
+      </div>
+
+</div>
+</div>
+    
+<div id="main" class="pt-4">
+        <div class="customContainer">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Sistema de pedidos</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    </ul>
+                    <form class="d-flex">
+                      <p><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;Admin</p>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+              <iframe class="customIframe" name="container" src="home.html" frameborder="0" width="100%" height="auto"></iframe>
+        </div>      
+</div>
+      
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
